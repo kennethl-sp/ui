@@ -1,5 +1,5 @@
 {
-  "name": "@surya-pamenang/ui",
+  "name": "@suryapamenang/ui",
   "version": "0.1.0",
   "type": "module",
   "description": "Shared React UI components, primitives and styles for Surya Pamenang applications.",

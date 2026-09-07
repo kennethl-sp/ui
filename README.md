@@ -1,4 +1,4 @@
-# @surya-pamenang/ui
+# @suryapamenang/ui
 
 Shared React UI primitives, composite components and styles for Surya Pamenang application frontends.
 
@@ -12,7 +12,7 @@ Built on [shadcn/ui](https://ui.shadcn.com/) primitives, Tailwind CSS v4 and Rad
 ## Installation
 
 ```sh
-pnpm add @surya-pamenang/ui
+pnpm add @suryapamenang/ui
 ```
 
 Peer dependencies are installed automatically by pnpm (`auto-install-peers=true`). With npm/yarn you must install them manually, see `peerDependencies` in `package.json`.
@@ -22,7 +22,7 @@ Peer dependencies are installed automatically by pnpm (`auto-install-peers=true`
 The package ships a prebuilt Tailwind browser `.css` containing the design tokens. Import it once in your app (e.g. `app.css`):
 
 ```css
-@import "@surya-pamenang/ui/styles.css";
+@import "@suryapamenang/ui/styles.css";
 ```
 
 > Note: the stylesheet already includes Tailwind, animations ([tw-animate-css](https://github.com/originjs/tw-animate-css)) and the `tailwind-scrollbar-hide` plugin. Do **not** import `tailwindcss` twice in the consuming app.
@@ -30,25 +30,25 @@ The package ships a prebuilt Tailwind browser `.css` containing the design token
 ### Import components
 
 ```tsx
-import { Button } from "@surya-pamenang/ui/primitives/button";
-import { Card, CardContent } from "@surya-pamenang/ui/primitives/card";
-import { cn } from "@surya-pamenang/ui/lib/utils";
-import { useIsMobile } from "@surya-pamenang/ui/hooks/use-mobile";
+import { Button } from "@suryapamenang/ui/primitives/button";
+import { Card, CardContent } from "@suryapamenang/ui/primitives/card";
+import { cn } from "@suryapamenang/ui/lib/utils";
+import { useIsMobile } from "@suryapamenang/ui/hooks/use-mobile";
 ```
 
 Exports are split by folder:
 
-- `@surya-pamenang/ui/primitives/*` – low-level UI primitives (button, dialog, select, …)
-- `@surya-pamenang/ui/components/*` – composite components (plate editor, file upload, multi-step viewer, …)
-- `@surya-pamenang/ui/hooks/*` – shared hooks
-- `@surya-pamenang/ui/lib/utils` – `cn()` helper
+- `@suryapamenang/ui/primitives/*` – low-level UI primitives (button, dialog, select, …)
+- `@suryapamenang/ui/components/*` – composite components (plate editor, file upload, multi-step viewer, …)
+- `@suryapamenang/ui/hooks/*` – shared hooks
+- `@suryapamenang/ui/lib/utils` – `cn()` helper
 
 ### Theming
 
 Theme tokens are plain CSS variables defined in `src/styles/styles.css` (`--background`, `--primary`, `--brand`, `--highlight`, …). Override them after the stylesheet import to theme your app:
 
 ```css
-@import "@surya-pamenang/ui/styles.css";
+@import "@suryapamenang/ui/styles.css";
 
 :root {
   --primary: oklch(0.45 0.2 150);
