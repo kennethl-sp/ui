@@ -10,9 +10,9 @@ import {
   UnderlinePlugin,
 } from "@platejs/basic-nodes/react";
 
-import { CodeLeaf } from "../primitives/code-node";
-import { HighlightLeaf } from "../primitives/highlight-node";
-import { KbdLeaf } from "../primitives/kbd-node";
+import { CodeLeaf } from "../primitives/code-node.js";
+import { HighlightLeaf } from "../primitives/highlight-node.js";
+import { KbdLeaf } from "../primitives/kbd-node.js";
 
 export const BasicMarksKit = [
   BoldPlugin,

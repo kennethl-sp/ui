@@ -1,6 +1,6 @@
-import { cn } from "../lib/utils";
+import { cn } from "../lib/utils.js";
 
-import { Toolbar } from "./toolbar";
+import { Toolbar } from "./toolbar.js";
 
 export function FixedToolbar(props: React.ComponentProps<typeof Toolbar>) {
   return (

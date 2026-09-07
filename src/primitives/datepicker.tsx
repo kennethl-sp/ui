@@ -1,9 +1,9 @@
 ﻿import { CalendarIcon } from "lucide-react";
 import * as React from "react";
-import { Button } from "./button";
-import { Calendar } from "./calendar";
-import { Input } from "./input";
-import { Popover, PopoverContent, PopoverTrigger } from "./popover";
+import { Button } from "./button.js";
+import { Calendar } from "./calendar.js";
+import { Input } from "./input.js";
+import { Popover, PopoverContent, PopoverTrigger } from "./popover.js";
 
 function formatDate(date: Date | undefined) {
   if (!date) {

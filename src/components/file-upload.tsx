@@ -3,8 +3,8 @@
 /** biome-ignore-all lint/a11y/useSemanticElements: 3rd party copy paste component */
 /** biome-ignore-all lint/a11y/useFocusableInteractive: 3rd party component */
 import { AlertCircleIcon, CloudUpload, File, XIcon } from "lucide-react";
-import { formatBytes, useFileUpload } from "../hooks/use-file-upload";
-import { Button } from "../primitives/button";
+import { formatBytes, useFileUpload } from "../hooks/use-file-upload.js";
+import { Button } from "../primitives/button.js";
 
 const getFileIcon = (file: { file: File | { type: string; name: string } }) => {
   const fileType = file.file.type;

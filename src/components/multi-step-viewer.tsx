@@ -2,9 +2,9 @@ import type { VariantProps } from "class-variance-authority";
 import { Check } from "lucide-react";
 import { AnimatePresence, type MotionProps, motion } from "motion/react";
 import type * as React from "react";
-import { useMultiStepForm } from "../hooks/use-multi-step-viewer";
-import { Button, type buttonVariants } from "../primitives/button";
-import { Progress } from "../primitives/progress";
+import { useMultiStepForm } from "../hooks/use-multi-step-viewer.js";
+import { Button, type buttonVariants } from "../primitives/button.js";
+import { Progress } from "../primitives/progress.js";
 
 const NextButton = (
   props: React.ComponentProps<"button"> &

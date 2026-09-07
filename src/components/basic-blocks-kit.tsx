@@ -10,7 +10,7 @@ import {
 } from "@platejs/basic-nodes/react";
 import { ParagraphPlugin } from "platejs/react";
 
-import { BlockquoteElement } from "../primitives/blockquote-node";
+import { BlockquoteElement } from "../primitives/blockquote-node.js";
 import {
   H1Element,
   H2Element,
@@ -18,9 +18,9 @@ import {
   H4Element,
   H5Element,
   H6Element,
-} from "../primitives/heading-node";
-import { HrElement } from "../primitives/hr-node";
-import { ParagraphElement } from "../primitives/paragraph-node";
+} from "../primitives/heading-node.js";
+import { HrElement } from "../primitives/hr-node.js";
+import { ParagraphElement } from "../primitives/paragraph-node.js";
 
 export const BasicBlocksKit = [
   ParagraphPlugin.withComponent(ParagraphElement),

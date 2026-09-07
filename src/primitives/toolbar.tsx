@@ -9,14 +9,14 @@ import {
   Tooltip as TooltipPrimitive,
 } from "radix-ui";
 import * as React from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../lib/utils.js";
 import {
   DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuSeparator,
-} from "./dropdown-menu";
-import { Separator } from "./separator";
-import { Tooltip, TooltipTrigger } from "./tooltip";
+} from "./dropdown-menu.js";
+import { Separator } from "./separator.js";
+import { Tooltip, TooltipTrigger } from "./tooltip.js";
 
 export function Toolbar({
   className,

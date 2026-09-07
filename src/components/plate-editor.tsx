@@ -1,8 +1,8 @@
 import { normalizeNodeId } from "platejs";
 import { Plate, usePlateEditor } from "platejs/react";
 
-import { BasicNodesKit } from "../components/basic-nodes-kit";
-import { Editor, EditorContainer } from "../primitives/editor";
+import { BasicNodesKit } from "../components/basic-nodes-kit.js";
+import { Editor, EditorContainer } from "../primitives/editor.js";
 
 export function PlateEditor() {
   const editor = usePlateEditor({
