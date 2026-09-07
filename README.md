@@ -72,7 +72,9 @@ New shadcn-style components can be added with the CLI and the bundled `component
 
 ## Publishing
 
-Releases are managed with [release-please](https://github.com/googleapis/release-please-action). On merge to `main`, release-please opens a release PR; when merged, `.github/workflows/release.yaml` runs `pnpm publish` with the `NPM_TOKEN` secret.
+Releases are managed with [release-please](https://github.com/googleapis/release-please-action). On merge to `main`, release-please opens a release PR; when merged, `.github/workflows/release.yaml` publishes via npm [trusted publishing (OIDC)](https://docs.npmjs.com/trusted-publishers) — no npm token is stored in CI. Both workflows run inside the nix development shell (see `flake.nix`).
+
+The first version must be published manually (`npm login`, then `npm publish`) so the package exists on the registry, then configure the trusted publisher on the package's npm access page pointing at this repository's `release.yaml` workflow.
 
 ## License
 

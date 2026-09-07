@@ -4,6 +4,13 @@
   "type": "module",
   "description": "Shared React UI components, primitives and styles for Surya Pamenang applications.",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kennethl-sp/ui.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "pnpm run build:styles && pnpm run build:components",
     "build:styles": "tailwindcss -i ./src/styles/styles.css -o ./dist/index.css",
